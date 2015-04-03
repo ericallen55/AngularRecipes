@@ -3,11 +3,11 @@ var app = angular.module('angularRecipes', ['ngRoute', 'firebase']);
 app.config(function ($routeProvider) {
     $routeProvider
             .when('/', {
-                templateUrl: 'index.html',
-                controller: 'mainController'
+                templateUrl: '/Pages/mainPage/mainPage.html',
+                controller: 'mainPageController'
             }).when('/recipePage', {
         templateUrl: '/Pages/recipePage/recipePage.html',
-        conroller: 'recipePageController'
+        controller: 'recipePageController'
     }).otherwise({
         redirectTo: '/'
     });

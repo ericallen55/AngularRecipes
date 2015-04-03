@@ -11,9 +11,10 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body ng-controller="mainController">
+        <a href="#/mainPage">MainPage</a>
         <h2>Recipes</h2>
         <ol>
-            <li ng-repeat="recipe in recipes" ng-click="getRecipe(recipe)">{{recipe.name}}</li>
+            <li ng-repeat="recipe in recipes"> <a href="#/recipePage">{{recipe.name}}</a></li>
         </ol>
         
         <!-- routed content -->
@@ -28,5 +29,7 @@ and open the template in the editor.
         <script src="Plugins/angularfire.min.js" type="text/javascript"></script>
         <script src="js/app.js" type="text/javascript"></script>
         <script src="js/mainController.js" type="text/javascript"></script>
+        <script src="Pages/recipePage/recipePageController.js" type="text/javascript"></script>
+        <script src="Pages/mainPage/mainPageController.js" type="text/javascript"></script>
     </body>
 </html>
