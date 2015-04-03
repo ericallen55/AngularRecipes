@@ -1,2 +1,6 @@
-{{test}}
-recipePage
+<p>{{recipe.name}}</p>
+<p>{{recipe.text}}</p>
+<div ng-repeat="step in recipe.steps">
+    <p>{{step.text}}</p>
+    <img src="{{step.image}}">
+</div>

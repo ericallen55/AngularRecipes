@@ -5,7 +5,7 @@ app.config(function ($routeProvider) {
             .when('/', {
                 templateUrl: '/Pages/mainPage/mainPage.html',
                 controller: 'mainPageController'
-            }).when('/recipePage', {
+            }).when('/recipePage/:param', {
         templateUrl: '/Pages/recipePage/recipePage.html',
         controller: 'recipePageController'
     }).otherwise({

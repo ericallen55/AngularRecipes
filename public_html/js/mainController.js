@@ -2,11 +2,7 @@ var app = angular.module('angularRecipes');
 
 app.controller('mainController', function ($scope){ 
     console.log('mainController');
-   $scope.recipes = [
-       {name: 'Begin',
-           text: 'begin text'},
-       {name:  'Controller',
-       text: 'conrotller text'}];
+   $scope.recipes = ['Begin', 'Controller'];
    
 //   $scope.getRecipe = function(recipe){
 //       console.log('getRecipe');
