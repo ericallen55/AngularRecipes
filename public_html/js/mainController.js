@@ -1,6 +1,6 @@
 var app = angular.module('angularRecipes');
 
-app.controller('mainController', function ($scope){ 
+app.controller('mainController', function ($scope, firebaseService){ 
     console.log('mainController');
    $scope.recipes = ['Begin', 'Controller'];
    

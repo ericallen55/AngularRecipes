@@ -8,6 +8,9 @@ app.config(function ($routeProvider) {
             }).when('/recipePage/:param', {
         templateUrl: '/Pages/recipePage/recipePage.html',
         controller: 'recipePageController'
+    }).when('/addRecipePage', {
+        templateUrl: '/Pages/addRecipePage/addRecipePage.html',
+        controller: 'addRecipePageController'
     }).otherwise({
         redirectTo: '/'
     });

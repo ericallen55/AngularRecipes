@@ -12,6 +12,7 @@ and open the template in the editor.
     </head>
     <body ng-controller="mainController">
         <a href="#/mainPage">MainPage</a>
+        <a href="#/addRecipePage">Add Recipe</a>
         <h2>Recipes</h2>
         <ol>
             <li ng-repeat="recipe in recipes"> <a href="#/recipePage/{{recipe}}">{{recipe}}</a></li>
@@ -27,9 +28,12 @@ and open the template in the editor.
         <script src="Plugins/angular.min.js" type="text/javascript"></script>
         <script src="Plugins/angular-route.min.js" type="text/javascript"></script>
         <script src="Plugins/angularfire.min.js" type="text/javascript"></script>
+        <script src="Plugins/firebase.js" type="text/javascript"></script>
         <script src="js/app.js" type="text/javascript"></script>
         <script src="js/mainController.js" type="text/javascript"></script>
         <script src="Pages/recipePage/recipePageController.js" type="text/javascript"></script>
         <script src="Pages/mainPage/mainPageController.js" type="text/javascript"></script>
+        <script src="js/firebaseService.js" type="text/javascript"></script>
+        <script src="Pages/addRecipePage/addRecipePageController.js" type="text/javascript"></script>
     </body>
 </html>
