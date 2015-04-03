@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="angularRecipes">
+    <head>
+        <title>Angular Recipes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="mainController">
+        <h2>Recipes</h2>
+        <ol>
+            <li ng-repeat="recipe in recipes" ng-click="getRecipe(recipe)">{{recipe.name}}</li>
+        </ol>
+        
+        <!-- routed content -->
+        <div>
+            <ng-view></ng-view>
+        </div>
+        
+        <script src="Plugins/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script src="Plugins/bootstrap.min.js" type="text/javascript"></script>
+        <script src="Plugins/angular.min.js" type="text/javascript"></script>
+        <script src="Plugins/angular-route.min.js" type="text/javascript"></script>
+        <script src="Plugins/angularfire.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="js/mainController.js" type="text/javascript"></script>
+    </body>
+</html>
