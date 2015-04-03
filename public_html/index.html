@@ -9,17 +9,22 @@ and open the template in the editor.
         <title>Angular Recipes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body ng-controller="mainController">
         <a href="#/mainPage">MainPage</a>
         <a href="#/addRecipePage">Add Recipe</a>
-        <h2>Recipes</h2>
-        <ol>
-            <li ng-repeat="recipe in recipes"> <a href="#/recipePage/{{recipe}}">{{recipe}}</a></li>
-        </ol>
         
+        <!-- side bar -->
+        <nav class="col-xs-3 navbar" id="sidebar">
+            <div class="navbar-header">Recipes</div>
+        <ul>
+            <li ng-repeat="recipe in recipes"> <a href="#/recipePage/{{recipe}}">{{recipe}}</a></li>
+        </ul>
+        </nav>
+               
         <!-- routed content -->
-        <div>
+        <div class="col-xs-9 ">
             <ng-view></ng-view>
         </div>
         

@@ -1,6 +1,8 @@
 <form>
-    Recipe Name: <input type="text" ng-model ="recipe.name">
-    Step text: <input type="text" ng-model ="recipe.text">
-    Step image: <input type="text" ng-model ="recipe.image">
+    <p>Recipe Name: <input type="text" ng-model ="recipe.name"></p>
+    <p>Step Name: <input type="text" ng-model ="step.name"></p>
+    <p>Step text: <input type="text" ng-model ="step.text"></p>
+    <p>Step image: <input type="text" ng-model ="step.image"></p>
+    <button ng-click="addStep()">Add Step</button>
     <input type="submit" ng-click="submit()">
 </form>
